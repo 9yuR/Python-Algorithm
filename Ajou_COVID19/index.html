@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>아주대 코로나19</title>
+    <meta name="description" content="아주대학교 코로나19 확진자 현황 알림 서비스 웹 프로젝트"/>
+    <meta name="keywords" content="아주대학교, 코로나19, COVID19, 확진자 알림 서비스"/>
+    <meta name="author" content="김규래"/>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- Open Graph (Facebook, Linkedin)-->
+    <meta property="og:type" content="website" />
+    <!-- https://ogp.me/#types -->
+    <meta property="og:title" content="아주대학교" />
+    <meta property="og:description" content="아주대학교 코로나바이러스감염증19 확진자 현황" />
+    <meta property="og:image" content="/_res/ajou/kr/img/common/img-logo.png" />
+    <meta property="og:url" content="https://www.ajou.ac.kr/kr/index.do" />
+    <meta property="og:site_name" content="잔재미코딩" />
+
+    <!-- twitter card (Twitter)-->
+    <!-- https://csharpcorner-mindcrackerinc.netdna-ssl.com/article/twitter-cards-implementation-with-websites/Images/summary_card_tweet.png -->
+    <meta name="twitter:card" content="summary" />
+    <!-- card 종류: summary, photo, player -->
+    <meta name="twitter:title" content="아주대학교" />
+    <meta name="twitter:description" content="아주대학교 코로나바이러스감염증19 확진자 현황" />
+    <meta name="twitter:image" content="/_res/ajou/kr/img/common/img-logo.png" />
+    <meta name="twitter:url" content="https://www.ajou.ac.kr/kr/index.do" />
+    <meta name="twitter:creator" content="김규래" />
+    <!-- 일반적인 fabicon 설정 -->
+    <link rel="icon" href="/_res/ajou/kr/img/intro/img-symbol.png"/>
+    <!-- ico파일의 경우 여러가지 화면에 적절히 맞추어진다 -->
+    <!-- ico파일 만들기 => 구글에 검색 -->
+    <!-- 아이폰용 fabicon 설정 -->
+    <link rel="apple-touch-icon" href="/_res/ajou/kr/img/intro/img-symbol.png"/>
+    <!-- IE용 fabicon 설정-->
+    <link rel="short icon" type="image/x-icon" href="/_res/ajou/kr/img/intro/img-symbol.png"/>
+    <!-- CSS Reset(1), style.css, 아이콘 폰트, 웹페이지 사용 폰트 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+    <!-- https://fontawesome.com/start -->
+    <script src="https://kit.fontawesome.com/f1def33959.js" crossorigin="anonymous"></script>
+    <!-- Spoca Han Sans Neo: https://spoqa.github.io/spoqa-han-sans/ko-KR/ -->
+    <link href="//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <header>
+        <div class="inner">
+            <div class="head-container">
+                <div class="head-ajou">
+                    <a href="https://www.ajou.ac.kr/kr/ajou/coronavirus-infection-19-school-response-guidance.do" target="_blank">코로나19 학교 대응 안내</a>
+                </div>
+                <div class="head-img">
+                    <a href="https://www.ajou.ac.kr/kr/index.do" target="_blank">
+                        <img class="head-img" src="img/symbol.png" alt="아주대학교 로고">
+                    </a>
+                </div>
+                <div class="head-covid19">
+                    <a href="http://ncov.mohw.go.kr/" target="_blank">COVID19(질병관리청)</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="main">
+        <div class="main-container">
+            <div class="inner">
+                <div class="title-container">
+                    <div class="title">코로나바이러스감염증-19(COVID-19) 교내 확진자 현황</div>
+                    <div class="message">
+                        교내 코로나 확진자의 시간 별 이동 경로와<br>
+                        교내 확진자 발생 현황을 확인 할 수 있습니다.<br>
+                        하루 빠른 코로나19 종식을 기원합니다.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="inform">
+        <div class="inner">
+            <div class="inform-container">
+                <div class="inform-message">
+                    <a href="https://www.ajou.ac.kr/kr/ajou/coronavirus-infection-19-school-response-guidance.do" target="_blank">
+                         <최근 확진 현황> 2021.08.06(금) 학부생 1명 확진 판정(교내 이동경로 용지관 4층)
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="timeline">
+        <div class="inner">
+            <div class="timeline-container">
+                <div class="timeline-text">교내 확진자 이동 경로 조회</div>
+                <div class="timeline-date-container">
+                    <div class="timeline-date">
+                        <select name="year">
+                            <option value="2021">2021</option>
+                            <option value="2020">2020</option>
+                        </select>
+                    </div>
+                    <div class="timeline-date">
+                        <select name="month">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                        </select>
+                    </div>
+                    <div class="timeline-date">
+                        <select name="month">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                            <option value="25">25</option>
+                            <option value="26">26</option>
+                            <option value="27">27</option>
+                            <option value="28">28</option>
+                            <option value="29">29</option>
+                            <option value="30">30</option>
+                            <option value="31">31</option>
+                        </select>
+                    </div>
+                    <div class="timeline-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="map">
+        <div class="inner">
+            <div id="map-api" style="width: 1150px; height: 1000px">
+	            <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=11670dfe2024f09f2d9723c56e35afba"></script>
+	            <script>
+		            var container = document.getElementById('map-api');
+		            var options = {
+			            center: new kakao.maps.LatLng(33.450701, 126.570667),
+			            level: 3
+		            };
+		        var map = new kakao.maps.Map(container, options);
+	            </script>
+                <!-- <img src="img/map.jpeg" alt="아주대학교 교내 지도" class="map-img"> -->
+            </div>
+        </div>
+    </section>
+    <section class="notice">
+        <div class="inner">
+            <div class="notice-container">
+                <div class="notice-title">기타 안내사항</div>
+                <div class="notice-message">
+                    - 실내에서는 반드시 마스크를 착용하여 주시기 바라며, 코로나19 예방수칙(주기적 환기, 손씻기, 기침예절, 승강기 대화금지 등)을 준수하여 주시기 바랍니다.
+                    <br><br>
+                    - 체온 37.5℃이상 발열, 인후통, 기침, 근육통 등 의심 증상이 있는 교내 구성원은 지역보건소에서 코로나19 검사를 받으시고 검사 결과가 나올 때까지 반드시 집에서 머물며
+                    타인과의
+                    접촉을 최소화하시기 바랍니다.
+                    <br><br>
+                    -코로나19 검사 결과 “양성” 판정을 받은 교내 모든 구성원께서는 지체없이 총무팀(T. 031-219-2074)으로 연락주시기 바랍니다.
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="inner">
+            <div class="footer-message">하루 빠른 코로나19 종식을 기원합니다.</div>
+            <div class="footer-contact">E-mail: kamgyul123@ajou.ac.kr &nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp; E-mail: wkazxf@ajou.ac.kr</div>
+            <div class="footer-copyright">Copyright 2021 © All rights reserved.</div>
+        </div>
+    </footer>
+    <a id="backtotop"></a>
+    <script src="js/main.js"></script>
+</body>
+</html>
